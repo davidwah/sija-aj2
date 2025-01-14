@@ -41,7 +41,7 @@ jobs:
       - name: Jalankan file python
         run: python nama.py
 
-      - name: Secret Variable
+      - shell: bash
         env:
           NAMA: ${{ secrets.NAMA_LENGKAP }}
         run: echo "$NAMA"
